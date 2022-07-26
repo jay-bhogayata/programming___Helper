@@ -6,28 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- tailwind config css -->
     <link rel="stylesheet" href="/input.css" />
-    
+
     <!-- google font  -->
     <link
       href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;1,600&display=swap"
       rel="stylesheet"
     />
-   
-    
-    <script  src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
-    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+
     <link
       rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/vs2015.min.css"
     />
-   
-    <script >
+
+    <script>
       hljs.highlightAll();
     </script>
-    
-    
-    
-    
+
     <style>
       body {
         font-family: "Work Sans", sans-serif;
@@ -37,40 +33,48 @@
   </head>
 
   <body class="bg-[#1f2933] flex">
-    <div class="lg:px-8 w-full mx-auto space-y-2">
-        <div class="bg-[#1E1E1E] border-2 flex-row flex justify-between px-2 border-pink-400 text-white rounded-xl">
-            <p class="top-0 mx-2 p-2 text-xl font-semibold">practical 1</p>
-            <button class="mt-2 text-2xl">⬇️</button>
-           
-          </div>
-      <div class="bg-[#1E1E1E] border-2 border-pink-400 text-white rounded-xl">
-        <p class="top-0 mx-2">input</p>
-        <div class="p-3">
-          <pre><code class="language-java nohighligh">
-                class AreaCircle{
+    <div class="lg:px-8 w-full mx-auto">
+      <div class="wholebox space-y-2 mt-5">
+        <div data-container class="space-y-3">
+          <template data-templete>
+            <div
+              class="bg-[#1E1E1E] border-2 flex-row flex justify-between px-2 border-pink-400 text-white rounded-xl"
+            >
+              <p class="top-0 mx-2 p-2 text-xl font-semibold" data-title>
+                practical 1
+              </p>
+              <button class="mt-2 text-2xl btn" data-show>⬇️</button>
+            </div>
+            <div class="ipopdiv hidden" data-maindiv>
+              <div
+                class="ipcode bg-[#1E1E1E] border-2 border-pink-400 text-white rounded-xl mt-5"
+              >
+                <p class="top-0 mx-2">input</p>
+                <div class="p-3">
+                  <pre>
+                  <code class="language-java nohighligh" data-input>
+                    
+                  </code>
+                </pre>
+                </div>
+              </div>
 
-                    public static void main(String args[]){
-                        int r = 10;
-                        double pi = 3.14;
-                        double area = pi*r*r;
-                
-                        System.out.println("Area of circle is : " + area);
-                    }
-                
-                
-                }
-            </code></pre>
-        </div>
-      </div>
-      <div class="bg-[#1E1E1E] border-2 border-pink-400 text-white rounded-xl">
-        <p class="top-0 mx-2">output</p>
-        <div class="p-3">
-          <pre><code class="language-java nohighligh">
+              <!-- optput -->
+              <div
+                class="opcode bg-[#1E1E1E] border-2 border-pink-400 text-white rounded-xl mb-5"
+              >
+                <p class="top-0 mx-2">output</p>
+                <div class="p-3">
+                  <pre><code class="language-java nohighligh" data-output>
             Area of circle is : 314.0
             </code></pre>
+                </div>
+              </div>
+            </div>
+          </template>
         </div>
       </div>
     </div>
-    
+    <script src="java.js" type="module"></script>
   </body>
 </html>
